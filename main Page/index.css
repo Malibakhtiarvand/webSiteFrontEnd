@@ -1,0 +1,88 @@
+.Header{
+    background: linear-gradient(#ff7f7f 40% , rgb(190, 255, 190) 60%);
+    padding: 10px 0%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner{
+    background-image: url('./imgs/banner-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Header>a{
+    color: black;
+    transition: color 2s;
+}
+
+.Header>a:hover{
+    color: blue;
+}
+
+.about_index{
+    display: flex;
+    align-items: center;
+}
+
+.What_We_Do_index{
+    justify-content: space-around;  
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+p{
+    font-size: 14pt;
+}
+
+.what_we_do_items{
+    background-color: antiquewhite;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.flow{
+    padding: 50px 0px;
+    align-items: center;
+}
+
+.flowInputs>input{
+    border-radius: 3px;
+    border: none;
+    margin-top: 3px;
+    height: 3em;
+    width: 100%;
+}
+
+.flowInputs>input::placeholder{
+    color: blue;
+}
+
+.bottom__site{
+	justify-content:space-between;
+	text-align:center;
+	background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),url("./imgs/flower-footer.png");
+}
+
+.bottom__site>*{
+	overflow-x:hidden;
+}
+
+@media (max-width:800px) {
+    .about_index{
+        flex-direction: column;
+    }
+
+    .flow{
+        flex-direction: column;
+    }
+
+    .google{
+        text-align: center;
+    }
+}
+
+body{
+	overflow-x:hidden;
+	margin:0px 10px;
+}
