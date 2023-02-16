@@ -14,9 +14,21 @@
         <h1 style="box-shadow: 1px 2px 20px aquamarine;text-shadow: 1px 1px 5px blue;">welcome to my site👋</h1>
         <input type="text">
         <input type="password" name="" id="">
+        <input type="checkbox" name="rememberMe" id="rememberMe">
+        <label for="rememberMe">remember me</label>
         <button>submit</button>
         <img src="./programming-bg.jpg" width="80%" alt="">
     </div>
 </body>
 
+<script>
+    var check=document.getElementById("rememberMe")
+    var isCheck=false
+    check.addEventListener(
+        'change',
+        function () {
+            isCheck=check.checked
+        }
+    )
+</script>
 </html>
